@@ -54,6 +54,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
+    { path: '', redirectTo: '/cards', pathMatch: 'full' },
     { path: "cards", component: _pages_cards_cards_component__WEBPACK_IMPORTED_MODULE_3__["CardsComponent"] },
     { path: "card-one", component: _pages_card_one_card_one_component__WEBPACK_IMPORTED_MODULE_2__["CardOneComponent"] },
     { path: "card-two", component: _pages_card_two_card_two_component__WEBPACK_IMPORTED_MODULE_4__["CardTwoComponent"] },

@@ -110,6 +110,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     "./src/app/pages/warning/warning.component.ts");
 
     var routes = [{
+      path: '',
+      redirectTo: '/cards',
+      pathMatch: 'full'
+    }, {
       path: "cards",
       component: _pages_cards_cards_component__WEBPACK_IMPORTED_MODULE_3__["CardsComponent"]
     }, {
