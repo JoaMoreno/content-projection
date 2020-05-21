@@ -1,0 +1,31 @@
+<div class="row mt-5 pt-5">
+    <div class="col-7 code">
+        <code>
+            <pre>
+                <div style="font-size: 22px; margin-left: 0;">
+    &lt;collapse-btn&gt;
+        &lt;h3 <strong>button</strong>&gt;Hola!&lt;/h3&gt;
+        &lt;ng-container <strong>body</strong>&gt;
+            &lt;description-card-lite <strong class="code">*ngFor</strong> &gt;&lt;/description-card-lite&gt;
+            &lt;button-pay-card&gt;&lt;/button-pay-card&gt;
+        &lt;/ng-container&gt;
+    &lt;/collapse-btn&gt;
+                </div>
+            </pre>
+        </code>
+        <h5 class="pt-5 ml-4">Si no se quiere renderizar "div" adicionales o cualquier otra etiqueta, deberias usar ng-container</h5>
+    </div>
+    <div class="col-5">
+        <div class="mx-5">
+            <collapse-btn [id]="'card2'">
+                <div button class="d-flex justify-content-around align-items-center">
+                    <h3>Hola!</h3>
+                </div>
+                <ng-container body>
+                    <description-card-lite *ngFor="let debt of dataBody" [data]="debt"></description-card-lite>
+                    <app-button-pay-card></app-button-pay-card>
+                </ng-container>
+            </collapse-btn>
+        </div>
+    </div>
+</div>

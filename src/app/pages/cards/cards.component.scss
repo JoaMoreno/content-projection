@@ -1,0 +1,19 @@
+.grid{
+    width: 100%;
+    max-height: 100vh;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.collapseSection{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+strong{
+    color: hotpink;
+    &.code{
+        color: rgb(86, 164, 228);
+    }
+}

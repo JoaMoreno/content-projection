@@ -1,0 +1,42 @@
+<h1 class="display-3 text-center m-5 pt-5">Content Projection</h1>
+
+<div class="grid mb-5">
+  <div class="mx-auto">
+    <collapse-btn [id]="'card1'">
+      <pay-card button [data]="dataButton"></pay-card>
+      <description-card *ngFor="let debt of dataBody" body [data]="debt"></description-card>
+    </collapse-btn>
+  </div>
+
+  <div class="mx-auto">
+    <collapse-btn [id]="'card2'">
+      <div button class="d-flex justify-content-around align-items-center">
+        <h3>Hola!</h3>
+      </div>
+      <ng-container body>
+        <description-card-lite *ngFor="let debt of dataBody" [data]="debt"></description-card-lite>
+        <app-button-pay-card></app-button-pay-card>
+      </ng-container>
+    </collapse-btn>
+  </div>
+
+  <div class="mx-auto">
+    <collapse-btn [id]="'card3'">
+      <h3 class="text-left" button>Login</h3>
+      <app-login-form body></app-login-form>
+    </collapse-btn>
+  </div>
+</div>
+
+<div class="collapseSection">
+  <div class="mx-auto">
+    <h4 style="font-weight: 300;">Component</h4>
+    <h1 style="margin-top: -10px;">&lt; collapse-btn &gt;</h1>
+  </div>
+  <div class="mx-auto">
+    <collapse-btn [id]="'card4'">
+      <p button>&lt;ng-content select="<strong>button</strong>"&gt;&lt;/ng-content&gt;</p>
+      <div class="mx-auto py-5" body>&lt;ng-content select="<strong>body</strong>"&gt;&lt;/ng-content&gt;</div>
+    </collapse-btn>
+  </div>
+</div>

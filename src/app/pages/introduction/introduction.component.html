@@ -1,0 +1,59 @@
+<div class="introduction mt-5 pt-5 container">
+    <h1 class="display-3 text-center m-5 p-5">Content Projection</h1>
+    <div class="my-5">
+        <div class="py-5">
+            <h2 class="m-5" style="font-weight: 400;">¿Qué es la proyección de contenido?</h2>
+            <h3 class="p-5" style="font-weight: 300;">Es la capacidad de insertar código html u otro componente en un componente.</h3>
+            <h3 class="pt-2">La proyección de contenido le permite insertar un Shadow DOM en su componente.</h3>
+            <img src="https://i.pinimg.com/564x/9a/54/17/9a541707e8b87607f25091fbc4538598.jpg" class="pt-5 mt-5" alt="">
+        </div>
+
+        <div class="py-5">
+            <h2 class="m-5" style="font-weight: 400;">¿Y como se usa?</h2>
+            <h3 class="p-5" style="font-weight: 300;">
+                Simple! <br>
+                En nuestro componente utilizaremos:
+            </h3>
+            <h1 style="font-weight: 300; color: crimson;" button>&lt;ng-content&gt;&lt;/ng-content&gt;</h1>
+            <h3 class="p-5" style="font-weight: 300;">
+                Y luego solo colocamos lo que queramos dentro!
+            </h3>
+            <h1 style="font-weight: 300; color: grey;" button>&lt;my-component&gt; <span style="color: crimson;">Hola!</span> &lt;/my-component&gt;</h1>
+        </div>
+
+        <div class="py-5">
+        </div>
+
+        <div class="py-5">
+            <h2 class="m-5" style="font-weight: 400;">¿Proyeccion multiple?</h2>
+            <h3 class="p-5" style="font-weight: 300;">
+                Simple! <br>
+                Podemos seleccionar que proyectar!
+            </h3>
+            <div class="text-left" style="margin-left: 200px;">
+                <h1 style="font-weight: 300;color: crimson;" button>&lt;ng-content <strong class="code">select=</strong><strong>"div"</strong>&gt;&lt;/ng-content&gt;</h1>
+                <h1 style="font-weight: 300;color: crimson;" button>&lt;ng-content <strong class="code">select=</strong><strong>"[Selector]"</strong>&gt;&lt;/ng-content&gt;</h1>
+                <h1 style="font-weight: 300;color: crimson;" button>&lt;ng-content <strong class="code">select=</strong><strong>".Clase"</strong>&gt;&lt;/ng-content&gt;</h1>
+            </div>
+
+            <hr>
+            <h1 class="text-left" style="font-weight: 300; color: grey; margin-left: 300px;" button>
+                &lt;my-component&gt;<br>
+                <span style="color: crimson;">
+                    &lt;<strong>div</strong>&gt;Hola!&lt;<strong>/div</strong>&gt;
+                </span><br>
+                <span style="color: crimson;">
+                &lt;div <strong>Selector</strong> &gt;Hola!&lt;/div&gt;
+                </span><br>
+                <span style="color: crimson;">
+                    &lt;div class=<strong>"Clase"</strong> &gt;Hola!&lt;/div&gt;
+                    </span><br>
+                &lt;/my-component&gt;
+            </h1>
+
+        </div>
+        <div class="py-5">
+            .
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+.introduction{
+    width: 100vw;
+    text-align: center;
+}
+strong{
+    color: rgb(58, 150, 236);
+    &.code{
+        color: rgb(228, 171, 86);
+    }
+}

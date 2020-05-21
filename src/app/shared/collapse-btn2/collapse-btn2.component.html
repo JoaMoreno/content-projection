@@ -1,0 +1,11 @@
+<div class="mt-5">
+    <a style="width: 100%; min-width: 550px; " class="btn-title btn pt-3 px-3" data-toggle="collapse" href="#{{id}}"
+        role="button" aria-expanded="false">
+        <ng-content select="[button]"></ng-content>
+    </a>
+    <div style="width: 100%; min-width: 400px;" class="collapse show" [id]="id">
+        <div class="card card-body {{color}}">
+            <ng-content select="[body]"></ng-content>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,38 @@
+<div class="row mt-5 pt-5">
+    <div class="col-6 code">
+        <code>
+            <pre>
+                <div style="font-size: 22px; margin-left: 0;">
+    &lt;collapse-btn&gt;
+        &lt;h3 <strong>button</strong>&gt;Level 1&lt;/h3&gt;
+        &lt;collapse-btn <strong>body</strong>&gt;
+            &lt;h3 <strong>button</strong>&gt;Level 2&lt;/h3&gt;
+            &lt;collapse-btn <strong>body</strong>&gt;
+                &lt;h3 <strong>button</strong>&gt;Level 3&lt;/h3&gt;
+                &lt;button (click)=&quot;plus()&quot; <strong>body</strong>&gt;Emit!&lt;/button&gt;
+            &lt;/collapse-btn&gt;
+        &lt;/collapse-btn&gt;
+    &lt;/collapse-btn&gt;
+                </div>
+            </pre>
+        </code>
+        <div class="text-center">
+            <h1>Clicks!</h1>
+            <h1>{{clicksNumber}}</h1>
+        </div>
+    </div>
+    <div class="col-6">
+        <div class="mx-5">
+            <collapse-btn2 [color]="'red'" [id]="'card1'">
+                <h3 button>Level 1</h3>
+                <collapse-btn2 body [color]="'blue'" [id]="'card2'">
+                    <h3 button>Level 2</h3>
+                    <collapse-btn2 body [color]="'yellow'" [id]="'card3'">
+                        <h3 button>Level 3</h3>
+                        <button (click)="plus()" body class="mx-5 my-3 p-3 btn btn-info" style="font-size: 22px;">Click!</button>
+                    </collapse-btn2>
+                </collapse-btn2>
+            </collapse-btn2>
+        </div>
+    </div>
+</div>
