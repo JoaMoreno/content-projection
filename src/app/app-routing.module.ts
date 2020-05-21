@@ -10,7 +10,7 @@ import { WarningComponent } from './pages/warning/warning.component';
 
 
 const routes: Routes = [
-  {path: '', redirectTo: '/card', pathMatch: 'full'},
+  {path: '', redirectTo: '/cards', pathMatch: 'full'},
   {path:"cards", component: CardsComponent},
   {path:"card-one", component: CardOneComponent},
   {path:"card-two", component: CardTwoComponent},
